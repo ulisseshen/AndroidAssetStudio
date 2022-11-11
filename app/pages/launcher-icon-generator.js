@@ -230,7 +230,7 @@ export class LauncherIconGenerator extends BaseGenerator {
 
         let drawFn_ = studio.Drawing[values.crop ? 'drawCenterCrop' : 'drawCenterInside'];
         drawFn_(ctx, foreSrcCtx, studio.Util.mult(targetRect, mult),
-            {x: 0, y: 0, w: foreSrcCtx.canvas.width, h: foreSrcCtx.canvas.height});
+            {x: 0, y: 0, w: foreSrcCtx.canvas.width, h: foreSrcCtx.canvas.height,});
       },
       effects: [],
     };
